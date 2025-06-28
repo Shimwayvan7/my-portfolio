@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shimwa Yvan - Kepler College Student</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #2c3e50, #3498db);
+      color: #f0f0f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 5px;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+    header p.quote {
+      font-style: italic;
+      font-size: 1.3rem;
+      color: #d1e8ff;
+      margin-top: 0;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    }
+    .profile-pic {
+      border-radius: 50%;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border: 4px solid #1abc9c;
+      box-shadow: 0 0 15px #1abc9c;
+      margin-bottom: 25px;
+      transition: transform 0.3s ease;
+    }
+    .profile-pic:hover {
+      transform: scale(1.1);
+    }
+    section {
+      background: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 25px 30px;
+      margin-bottom: 25px;
+      max-width: 700px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    }
+    section h2 {
+      color: #1abc9c;
+      margin-top: 0;
+      border-bottom: 2px solid #1abc9c;
+      padding-bottom: 6px;
+      margin-bottom: 15px;
+    }
+    ul.certificates {
+      list-style-type: square;
+      padding-left: 20px;
+      color: #ecf0f1;
+    }
+    ul.certificates li {
+      margin-bottom: 8px;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+      color: #e1e8f0;
+    }
+    footer {
+      margin-top: auto;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #7f8c8d;
+      text-align: center;
+    }
+
+    /* Subtle floating animation for background circles */
+    .floating-circles {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .floating-circles span {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(26, 188, 156, 0.15);
+      animation: floatUp 20s linear infinite;
+      opacity: 0.6;
+      filter: blur(2px);
+    }
+    .floating-circles span:nth-child(1) {
+      width: 100px; height: 100px; left: 10%;
+      animation-delay: 0s;
+    }
+    .floating-circles span:nth-child(2) {
+      width: 150px; height: 150px; left: 40%;
+      animation-delay: 5s;
+    }
+    .floating-circles span:nth-child(3) {
+      width: 80px; height: 80px; left: 70%;
+      animation-delay: 10s;
+    }
+    .floating-circles span:nth-child(4) {
+      width: 120px; height: 120px; left: 85%;
+      animation-delay: 3s;
+    }
+    .floating-circles span:nth-child(5) {
+      width: 60px; height: 60px; left: 25%;
+      animation-delay: 7s;
+    }
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.6;
+      }
+      100% {
+        transform: translateY(-150vh);
+        opacity: 0;
+      }
+    }
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      .profile-pic {
+        width: 140px;
+        height: 140px;
+      }
+      section {
+        max-width: 90vw;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="floating-circles" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <header>
+    <img
+      src="https://drive.google.com/uc?export=view&id=14SORYzmAEjfiR4QSGnuhEUjCDyYmaLcE"
+      alt="Shimwa Yvan"
+      class="profile-pic"
+    />
+    <h1>Shimwa Yvan</h1>
+    <p class="quote">"Time shall tell"</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am currently completing my foundational program at Kepler College, aiming to acquire the most sought-after soft skills by employers. I will soon begin my degree in Business Management and am part of the 2028 graduating class.
+    </p>
+    <p>
+      I aspire to become a dynamic leader who drives innovation and creates value by managing people and resources effectively. My long-term goal is to build a career that combines strategic decision-making with social impact, eventually leading my own business or managing high-level global projects.
+    </p>
+  </section>
+
+  <section>
+    <h2>Academic Achievements & Certificates</h2>
+    <ul class="certificates">
+      <li>I Lead Leadership Program in Schools</li>
+      <li>DELF B1 and B2 French Level Certificates</li>
+      <li>Certificate of Appreciation for Leadership Work at High School</li>
+      <li>High School Diploma from Wellspring Academy</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Athletics & Leadership</h2>
+    <p>
+      A passionate sports enthusiast, I competed highly in football and was honored to represent Rwanda at the U-16 and U-20 CECAFA and AFCON competitions. I proudly served as Vice-Captain of the U-16 national team.
+    </p>
+    <p>
+      During high school, I was the Environmental Prefect in 11th grade and later promoted to Assistant Headboy in my final year.
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Shimwa Yvan | Kepler College Student
+  </footer>
+
+</body>
+</html>
